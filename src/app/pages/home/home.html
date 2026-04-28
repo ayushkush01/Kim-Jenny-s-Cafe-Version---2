@@ -1,45 +1,63 @@
-<main class="bg-bone min-h-screen">
-  <section class="max-w-container mx-auto px-5">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center py-16 lg:py-24">
+<main class="min-h-screen bg-[#F7F4EE] font-serif text-[#322018] selection:bg-[#322018]/10">
+  
+  <section class="mx-auto max-w-[1400px] px-6 py-12 lg:px-16 lg:py-20">
+    <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-20">
+      
       <div class="order-2 lg:order-1">
-        <p class="text-xs tracking-[0.25em] uppercase text-chocolate mb-4">Family-owned in Duncanville since 2014</p>
-        <h1 class="font-serif font-normal text-chocolate text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
-          Good coffee, hearty plates, and a place that feels like part of the neighborhood.
-        </h1>
-        <p class="text-chocolate/70 text-sm md:text-base leading-relaxed mb-8 max-w-md">
-          Family-owned in Duncanville since 2014. Good coffee, hearty plates, and a neighborhood feel.
+        <p class="mb-6 text-[13px] font-medium tracking-[0.15em] text-[#8b7355] opacity-80">
+          Family-owned cafe in Duncanville
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 mb-10">
-          <a 
-            class="inline-flex items-center justify-center bg-chocolate text-bone text-sm px-8 py-3 hover:bg-chocolate-light transition-colors"
-            routerLink="/menu">
+        
+        <h1 class="mb-8 text-[44px] font-medium leading-[1.1] tracking-tight text-[#322018] md:text-6xl lg:text-7xl">
+          Discover Art of
+Perfect Coffee.
+        </h1>
+        
+        <p class="mb-10 max-w-md text-[17px] leading-relaxed text-[#322018]/80 font-sans">
+          We built Kim & Jenny's Cafe to feel warm, easy, and welcoming. Come by for breakfast, lunch, coffee, or a quick pickup order on the way through town.
+        </p>
+        
+        <div class="mb-16 flex flex-col gap-4 sm:flex-row">
+          <a routerLink="/menu" 
+             class="inline-flex h-14 items-center justify-center rounded-xl bg-[#322018] px-10 text-[15px] font-bold text-white transition-transform hover:scale-[1.02] active:scale-95 shadow-lg shadow-[#322018]/20">
             View Menu
           </a>
-          <a 
-            class="inline-flex items-center justify-center border border-chocolate text-chocolate text-sm px-8 py-3 hover:bg-chocolate hover:text-bone transition-colors"
-            routerLink="/location">
+          <a routerLink="/location" 
+             class="inline-flex h-14 items-center justify-center rounded-xl border border-stone-300 bg-white/50 px-10 text-[15px] font-bold text-[#322018] backdrop-blur-sm transition-all hover:bg-white hover:shadow-md">
             Visit Us
           </a>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="border border-chocolate/10 bg-white p-5 shadow-sm">
-            <p class="text-[10px] tracking-[0.3em] uppercase text-chocolate mb-2">ADDRESS</p>
-            <p class="text-chocolate text-sm">586 E Wheatland Rd<br>Duncanville, TX 75116</p>
+        
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div class="rounded-[24px] border border-stone-200/60 bg-white/40 p-8 backdrop-blur-sm">
+            <p class="mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-stone-400">ADDRESS</p>
+            <p class="text-[15px] font-medium leading-relaxed">
+              586 E Wheatland Rd<br>
+              Duncanville, TX 75116
+            </p>
           </div>
-          <div class="border border-chocolate/10 bg-white p-5 shadow-sm">
-            <p class="text-[10px] tracking-[0.3em] uppercase text-chocolate mb-2">HOURS</p>
-            <p class="text-chocolate text-sm">Mon-Fri 7am-6pm<br>Sat 8am-5pm, Sun 9am-4pm</p>
+          
+          <div class="rounded-[24px] border border-stone-200/60 bg-white/40 p-8 backdrop-blur-sm">
+            <p class="mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-stone-400">HOURS</p>
+            <p class="text-[15px] font-medium leading-relaxed">
+              Mon-Fri 7am-6pm<br>
+              Sat 8am-5pm, Sun 9am-4pm
+            </p>
           </div>
         </div>
       </div>
+      
       <div class="order-1 lg:order-2">
-        <img 
-          src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&q=85"
-          alt="Cafe interior"
-          class="w-full aspect-[4/3] object-cover"
-          loading="lazy"
-        />
+        <div class="relative overflow-hidden rounded-[48px] shadow-2xl">
+          <img 
+            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&q=90"
+            alt="Cafe Interior"
+            class="aspect-[4/5] w-full object-cover lg:aspect-[1/1.2]"
+            loading="eager"
+          />
+        </div>
       </div>
+
     </div>
   </section>
 </main>
