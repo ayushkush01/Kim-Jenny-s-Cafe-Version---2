@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #7A6A4F;
+    --color-secondary: #b8a99a;
+    --color-accent: #d4a574;
+    --color-bg: #F5F2ED;
+    --color-surface: #FDFAF7;
+    --color-text: #1C1410;
+    --color-link: #6b8e7f;
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --shadow-soft: 0 1px 2px rgba(28, 20, 16, 0.08);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #57534e;
+    background: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--color-text);
+    letter-spacing: -0.01em;
+    font-weight: 400;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.script-accent {
+  font-family: 'Dancing Script', cursive;
+  color: var(--color-accent);
+  font-size: clamp(28px, 5vw, 52px);
+  line-height: 1;
+}
+
+.brand-logo {
+  line-height: 1.05;
+}
+
+.brand-logo-main {
+  display: block;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.brand-logo-sub {
+  display: block;
+  margin-top: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.brand-amp {
+  color: var(--color-link);
+  padding: 0 2px;
+}
+
+.menu-line {
+  border-bottom: 1px dotted rgba(45, 45, 45, 0.3);
+  flex: 1;
+  margin: 0 10px;
+  transform: translateY(-2px);
+}
+
+.menu-tag {
+  font-size: 11px;
+  line-height: 1;
+  color: var(--color-primary);
+  border: 1px solid rgba(139, 115, 85, 0.4);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: rgba(212, 165, 116, 0.08);
+}
+
+.cafe-link {
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.cafe-link:hover {
+  color: var(--color-link);
+}
+
+.cafe-button {
+  background: var(--color-primary);
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 12px 32px;
+  font-weight: 600;
+  transition:
+    background-color 0.35s ease,
+    border-color 0.35s ease,
+    color 0.35s ease;
+}
+
+.cafe-button:hover {
+  background: #766248;
+}
+
+.cafe-button:focus-visible,
+.cafe-input:focus-visible,
+.cafe-textarea:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
+}
+
+.cafe-input,
+.cafe-textarea {
+  width: 100%;
+  border: 1px solid #d8d0c6;
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  background: var(--color-surface);
+  transition:
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.cafe-input:focus,
+.cafe-textarea:focus {
+  border-color: var(--color-link);
+  box-shadow: 0 0 0 3px rgba(107, 142, 127, 0.18);
+}
+
+.cafe-input[aria-invalid='true'],
+.cafe-textarea[aria-invalid='true'] {
+  border-color: #b3261e;
+}
+
+.page-shell {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-card {
+  background: var(--color-surface);
+  border: 1px solid #e6ddd4;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    transform 0.45s ease,
+    opacity 0.45s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+main {
+  animation: pageIn 0.45s ease;
+}
+
+@keyframes pageIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

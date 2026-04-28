@@ -1,0 +1,45 @@
+<main class="bg-bone min-h-screen">
+  <section class="max-w-container mx-auto px-5">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center py-16 lg:py-24">
+      <div class="order-2 lg:order-1">
+        <p class="text-xs tracking-[0.25em] uppercase text-chocolate mb-4">Family-owned in Duncanville since 2014</p>
+        <h1 class="font-serif font-normal text-chocolate text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
+          Good coffee, hearty plates, and a place that feels like part of the neighborhood.
+        </h1>
+        <p class="text-chocolate/70 text-sm md:text-base leading-relaxed mb-8 max-w-md">
+          Family-owned in Duncanville since 2014. Good coffee, hearty plates, and a neighborhood feel.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 mb-10">
+          <a 
+            class="inline-flex items-center justify-center bg-chocolate text-bone text-sm px-8 py-3 hover:bg-chocolate-light transition-colors"
+            routerLink="/menu">
+            View Menu
+          </a>
+          <a 
+            class="inline-flex items-center justify-center border border-chocolate text-chocolate text-sm px-8 py-3 hover:bg-chocolate hover:text-bone transition-colors"
+            routerLink="/location">
+            Visit Us
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="border border-chocolate/10 bg-white p-5 shadow-sm">
+            <p class="text-[10px] tracking-[0.3em] uppercase text-chocolate mb-2">ADDRESS</p>
+            <p class="text-chocolate text-sm">586 E Wheatland Rd<br>Duncanville, TX 75116</p>
+          </div>
+          <div class="border border-chocolate/10 bg-white p-5 shadow-sm">
+            <p class="text-[10px] tracking-[0.3em] uppercase text-chocolate mb-2">HOURS</p>
+            <p class="text-chocolate text-sm">Mon-Fri 7am-6pm<br>Sat 8am-5pm, Sun 9am-4pm</p>
+          </div>
+        </div>
+      </div>
+      <div class="order-1 lg:order-2">
+        <img 
+          src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&q=85"
+          alt="Cafe interior"
+          class="w-full aspect-[4/3] object-cover"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
+</main>
