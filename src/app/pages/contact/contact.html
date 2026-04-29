@@ -12,155 +12,166 @@
     </div>
     <div class="relative z-10 max-w-container mx-auto px-6 lg:px-8 text-center text-white">
       <p class="text-sm tracking-[0.3em] uppercase text-white mb-4" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">Reach Out</p>
-      <h1 class="text-[40px] md:text-[56px] lg:text-[64px] font-display font-medium leading-tight mb-4" style="color: #F5DEB3; text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">
+      <h1 class="text-[48px] md:text-[64px] lg:text-[72px] font-display font-medium leading-tight mb-4" style="color: #F5DEB3; text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">
         Get in Touch
       </h1>
       <p class="text-lg md:text-xl text-white font-sans max-w-2xl mx-auto" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">
-        Questions, catering requests, or large table reservations — we'd love to hear from you.
+        Walk-ins always welcome. Questions, catering, or just to say hi — we're here.
       </p>
     </div>
   </section>
 
   <!-- CONTACT CONTENT -->
-  <section class="section-padding">
-    <div class="max-w-container mx-auto px-6 lg:px-8">
+  <section class="section-padding relative" style="background-color: #FBF7F2;">
+    <!-- Subtle warm texture overlay -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\'/%3E%3C/svg%3E');"></div>
+    
+    <div class="max-w-container mx-auto px-6 lg:px-8 relative z-10">
+      <div class="grid gap-12 lg:gap-16 lg:grid-cols-2 lg:items-start">
+        <!-- LEFT COLUMN: Editorial Info (no white card box) -->
+        <aside class="contact-info">
+          <!-- Header -->
+          <p class="text-xs tracking-[0.3em] uppercase font-semibold mb-4" style="color: #8B4513;">WE'D LOVE TO SEE YOU</p>
+          <h2 class="font-serif text-[40px] md:text-[48px] font-medium leading-[1.1] mb-4" style="color: #1A0A00;">
+            Stop In. Say Hi.
+          </h2>
+          <p class="text-base italic mb-10 max-w-[340px]" style="color: #6B4C3B;">
+            No reservations needed. Just walk in, and we'll have something warm ready for you.
+          </p>
 
-      <div class="grid gap-12 lg:gap-16 lg:grid-cols-12 lg:items-start">
-        <!-- Contact Info Sidebar -->
-        <aside class="lg:col-span-5">
-          <div class="card p-8 space-y-6">
-            <!-- Phone -->
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <i class="fas fa-phone-alt text-xl text-primary"></i>
-              </div>
-              <div>
-                <p class="text-xs tracking-[0.25em] uppercase text-text-muted mb-1 font-medium">Phone</p>
-                <a href="tel:+12145550199" class="text-text-dark hover:text-primary transition-colors text-lg font-medium">(214) 555-0199</a>
+          <!-- Info Rows (minimal, clean) -->
+          <div class="space-y-6 mb-10">
+            <!-- Address -->
+            <div class="flex items-center gap-3">
+              <i data-lucide="map-pin" class="w-5 h-5 flex-shrink-0" style="color: #8B4513;"></i>
+              <p class="text-lg" style="color: #3D1A0A;">586 E. Wheatland Rd., Duncanville, TX 75116</p>
+            </div>
+
+            <!-- Hours -->
+            <div class="flex items-start gap-3">
+              <i data-lucide="clock" class="w-5 h-5 flex-shrink-0 mt-1" style="color: #8B4513;"></i>
+              <div class="text-lg" style="color: #3D1A0A;">
+                Mon–Sat &nbsp;7am – 3pm<br>
+                Sun &nbsp;10am – 3pm
               </div>
             </div>
 
             <!-- Email -->
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <i class="fas fa-envelope text-xl text-primary"></i>
-              </div>
-              <div>
-                <p class="text-xs tracking-[0.25em] uppercase text-text-muted mb-1 font-medium">Email</p>
-                <a href="mailto:hello&#64;kimandjennys.com" class="text-text-dark hover:text-primary transition-colors text-lg font-medium">hello&#64;kimandjennys.com</a>
-              </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="mail" class="w-5 h-5 flex-shrink-0" style="color: #8B4513;"></i>
+              <a href="mailto:hello@kimandjennys.com" class="text-lg hover:opacity-80 transition-opacity" style="color: #3D1A0A;">hello@kimandjennys.com</a>
             </div>
+          </div>
 
-            <!-- Address -->
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <i class="fas fa-map-marker-alt text-xl text-primary"></i>
-              </div>
-              <div>
-                <p class="text-xs tracking-[0.25em] uppercase text-text-muted mb-1 font-medium">Address</p>
-                <p class="text-text-dark text-lg leading-relaxed">586 E Wheatland Rd<br>Duncanville, TX 75116</p>
-              </div>
+          <!-- Social Media -->
+          <div class="mb-10">
+            <p class="text-[11px] tracking-[0.2em] uppercase font-semibold mb-4" style="color: #8B4513;">FOLLOW ALONG</p>
+            <div class="flex gap-3">
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/kimandjennyscafe/" target="_blank" rel="noreferrer"
+                 class="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+                 style="border: 1.5px solid #C8963E; color: #8B4513;"
+                 onmouseenter="this.style.backgroundColor='#8B4513'; this.style.color='#FBF7F2'; this.style.borderColor='#8B4513';"
+                 onmouseleave="this.style.backgroundColor='transparent'; this.style.color='#8B4513'; this.style.borderColor='#C8963E';">
+                <i class="fab fa-instagram text-lg"></i>
+              </a>
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/kimandjennyscafe/" target="_blank" rel="noreferrer"
+                 class="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+                 style="border: 1.5px solid #C8963E; color: #8B4513;"
+                 onmouseenter="this.style.backgroundColor='#8B4513'; this.style.color='#FBF7F2'; this.style.borderColor='#8B4513';"
+                 onmouseleave="this.style.backgroundColor='transparent'; this.style.color='#8B4513'; this.style.borderColor='#C8963E';">
+                <i class="fab fa-facebook-f text-lg"></i>
+              </a>
             </div>
+          </div>
 
-            <!-- Hours -->
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <i class="fas fa-clock text-xl text-primary"></i>
-              </div>
-              <div>
-                <p class="text-xs tracking-[0.25em] uppercase text-text-muted mb-1 font-medium">Hours</p>
-                <p class="text-text-dark text-lg leading-relaxed">
-                  Mon–Fri: 7am – 6pm<br>
-                  Sat–Sun: 8am – 5pm
-                </p>
-              </div>
-            </div>
-
-            <!-- Social Links -->
-            <div class="pt-6 border-t border-chocolate/10">
-              <p class="text-xs tracking-[0.25em] uppercase text-text-muted mb-4 font-medium">Follow Us</p>
-              <div class="flex gap-3">
-                <a href="https://www.instagram.com" target="_blank" rel="noreferrer"
-                   class="w-10 h-10 rounded-full bg-chocolate/5 flex items-center justify-center text-chocolate hover:bg-primary hover:text-white transition-all duration-300">
-                  <i class="fab fa-instagram text-lg"></i>
-                </a>
-                <a href="https://www.facebook.com" target="_blank" rel="noreferrer"
-                   class="w-10 h-10 rounded-full bg-chocolate/5 flex items-center justify-center text-chocolate hover:bg-primary hover:text-white transition-all duration-300">
-                  <i class="fab fa-facebook-f text-lg"></i>
-                </a>
-                <a href="https://www.twitter.com" target="_blank" rel="noreferrer"
-                   class="w-10 h-10 rounded-full bg-chocolate/5 flex items-center justify-center text-chocolate hover:bg-primary hover:text-white transition-all duration-300">
-                  <i class="fab fa-twitter text-lg"></i>
-                </a>
-              </div>
-            </div>
+          <!-- Warm Quote -->
+          <div class="pl-4" style="border-left: 3px solid #C8963E;">
+            <p class="font-serif text-[15px] italic" style="color: #C8963E;">
+              "Your mug might already be waiting."
+            </p>
           </div>
         </aside>
 
-        <!-- Contact Form -->
-        <article class="lg:col-span-7">
-          <div class="card p-8 lg:p-10">
+        <!-- RIGHT COLUMN: Form Card -->
+        <article class="contact-form-wrapper">
+          <div class="p-8 lg:p-10" style="background: #FFFFFF; border: 1px solid #E8DDD0; border-radius: 20px; box-shadow: 0 4px 24px rgba(61,26,10,0.08);">
+            <!-- Form Header -->
+            <div class="mb-8">
+              <p class="text-[11px] tracking-[0.2em] uppercase font-semibold mb-2" style="color: #8B4513;">SEND US A MESSAGE</p>
+              <p class="text-sm" style="color: #6B4C3B;">We read every message and respond within 24 hours.</p>
+            </div>
+
             <!-- Success Message -->
-            <div *ngIf="isSubmitted" class="mb-8 rounded-2xl bg-cream border border-primary/20 p-5 flex items-start gap-3">
-              <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <i class="fas fa-check text-primary"></i>
+            <div *ngIf="isSubmitted" class="mb-8 rounded-xl p-5 flex items-start gap-3" style="background: #FFF8F0; border: 1px solid #C8963E;">
+              <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(139,69,19,0.1);">
+                <i data-lucide="check" class="w-5 h-5" style="color: #8B4513;"></i>
               </div>
               <div>
-                <p class="text-lg font-medium text-text-dark">Message sent successfully!</p>
-                <p class="text-text-muted mt-1">Thanks for reaching out. We'll get back to you soon.</p>
+                <p class="text-lg font-medium" style="color: #2C1810;">Message sent successfully!</p>
+                <p class="text-sm mt-1" style="color: #6B4C3B;">Thanks for reaching out. We'll get back to you soon.</p>
               </div>
             </div>
 
-            <form (ngSubmit)="onSubmit()" #contactForm="ngForm" class="space-y-6" aria-label="Contact form">
+            <!-- Form -->
+            <form (ngSubmit)="onSubmit()" #contactForm="ngForm" class="space-y-5" aria-label="Contact form">
               <!-- Name & Email Row -->
-              <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
                 <div>
-                  <label for="name" class="mb-2 block text-xs tracking-[0.2em] uppercase text-text-muted font-medium">Name</label>
+                  <label for="name" class="mb-2 block text-[11px] tracking-[0.08em] uppercase font-semibold" style="color: #6B4C3B;">Name</label>
                   <input type="text" id="name" name="name" [(ngModel)]="formData.name" required
-                         class="w-full rounded-xl border border-chocolate/10 bg-cream/50 px-4 py-3.5 text-text-dark placeholder-text-muted focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
-                         placeholder="Jane Doe" />
+                         class="w-full px-4 py-3.5 text-[#3D1A0A] placeholder-[#B0998A] transition-all outline-none"
+                         style="background: #FFFCF9; border: 1.5px solid #D4C5B5; border-radius: 10px;"
+                         placeholder="Your name" />
                 </div>
                 <div>
-                  <label for="email" class="mb-2 block text-xs tracking-[0.2em] uppercase text-text-muted font-medium">Email</label>
+                  <label for="email" class="mb-2 block text-[11px] tracking-[0.08em] uppercase font-semibold" style="color: #6B4C3B;">Email</label>
                   <input type="email" id="email" name="email" [(ngModel)]="formData.email" required
-                         class="w-full rounded-xl border border-chocolate/10 bg-cream/50 px-4 py-3.5 text-text-dark placeholder-text-muted focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
-                         placeholder="jane@example.com" />
+                         class="w-full px-4 py-3.5 text-[#3D1A0A] placeholder-[#B0998A] transition-all outline-none"
+                         style="background: #FFFCF9; border: 1.5px solid #D4C5B5; border-radius: 10px;"
+                         placeholder="your@email.com" />
                 </div>
               </div>
 
               <!-- Subject -->
               <div>
-                <label for="subject" class="mb-2 block text-xs tracking-[0.2em] uppercase text-text-muted font-medium">Subject</label>
+                <label for="subject" class="mb-2 block text-[11px] tracking-[0.08em] uppercase font-semibold" style="color: #6B4C3B;">What's on your mind?</label>
                 <div class="relative">
                   <select id="subject" name="subject" [(ngModel)]="formData.subject" required
-                          class="w-full rounded-xl border border-chocolate/10 bg-cream/50 px-4 py-3.5 text-text-dark focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all appearance-none cursor-pointer">
-                    <option value="" disabled selected>Select a topic...</option>
-                    <option value="feedback">General Feedback</option>
+                          class="w-full px-4 py-3.5 text-[#3D1A0A] transition-all outline-none appearance-none cursor-pointer"
+                          style="background: #FFFCF9; border: 1.5px solid #D4C5B5; border-radius: 10px;">
+                    <option value="" disabled selected>Choose a topic...</option>
+                    <option value="general">General Question</option>
                     <option value="catering">Catering Inquiry</option>
-                    <option value="reservation">Large Table Reservation</option>
-                    <option value="wholesale">Wholesale Inquiry</option>
-                    <option value="press">Press / Media</option>
-                    <option value="other">Other</option>
+                    <option value="event">Event Booking</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Something Else</option>
                   </select>
-                  <i class="fas fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-text-muted pointer-events-none"></i>
+                  <i data-lucide="chevron-down" class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none" style="color: #8B4513;"></i>
                 </div>
               </div>
 
               <!-- Message -->
               <div>
-                <label for="message" class="mb-2 block text-xs tracking-[0.2em] uppercase text-text-muted font-medium">Message</label>
-                <textarea id="message" name="message" [(ngModel)]="formData.message" required rows="5"
-                          class="w-full rounded-xl border border-chocolate/10 bg-cream/50 px-4 py-3.5 text-text-dark placeholder-text-muted focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all resize-none"
-                          placeholder="How can we help you?"></textarea>
+                <label for="message" class="mb-2 block text-[11px] tracking-[0.08em] uppercase font-semibold" style="color: #6B4C3B;">Message</label>
+                <textarea id="message" name="message" [(ngModel)]="formData.message" required
+                          class="w-full px-4 py-3.5 text-[#3D1A0A] placeholder-[#B0998A] transition-all outline-none resize-none"
+                          style="background: #FFFCF9; border: 1.5px solid #D4C5B5; border-radius: 10px; min-height: 140px;"
+                          placeholder="Tell us anything — we love hearing from our community."></textarea>
               </div>
 
               <!-- Submit Button -->
               <button
                 type="submit"
-                [disabled]="!contactForm.form.valid"
-                class="btn-primary w-full justify-center text-lg py-4 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:shadow-none">
+                class="w-full flex items-center justify-center gap-2 text-base font-medium tracking-wide transition-all duration-200"
+                style="background: #3D1A0A; color: #FBF7F2; border-radius: 10px; height: 52px;"
+                onmouseenter="this.style.backgroundColor='#5C2A12'; this.style.transform='scale(1.01)';"
+                onmouseleave="this.style.backgroundColor='#3D1A0A'; this.style.transform='scale(1)';"
+                onmousedown="this.style.transform='scale(0.99)';"
+                onmouseup="this.style.transform='scale(1.01)';">
                 Send Message
-                <i class="fas fa-paper-plane ml-2"></i>
+                <i data-lucide="send" class="w-4 h-4"></i>
               </button>
             </form>
           </div>
