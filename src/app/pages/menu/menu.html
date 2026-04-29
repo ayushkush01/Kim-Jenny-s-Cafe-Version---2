@@ -1,244 +1,334 @@
-<main class="min-h-screen bg-cafe-bg pb-24 pt-24 text-cafe-text">
-  <div class="page-shell">
-    <header class="mb-12 grid gap-8 md:grid-cols-12 md:items-end">
-      <div class="md:col-span-7">
-        <h1 class="mb-4 text-[48px] leading-[1.1]">Menu</h1>
-        <p class="max-w-[44ch] text-[18px]">From breakfast classics to comfort plates, our menu is built around generous portions, familiar flavors, and coffee that keeps up with your day.</p>
-      </div>
-      <div class="md:col-span-5 md:flex md:justify-end md:pl-8">
-        <a
-          href="https://order.toasttab.com/online/kimandjennyscafe-new-location-586-e-wheatland-rd"
-          target="_blank"
-          rel="noreferrer"
-          class="inline-flex h-12 items-center justify-center rounded-lg bg-[#7A6A4F] px-6 text-sm font-medium text-white transition-all hover:bg-[#6A5A3F]">
-          Order Online
-        </a>
-      </div>
-    </header>
+<main class="min-h-screen bg-cream">
 
-    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
-      <div class="space-y-8 lg:space-y-12">
-                
-        <section class="rounded-xl border border-stone-200 bg-white p-8">
+  <!-- HERO BANNER -->
+  <section class="relative py-24 lg:py-32 bg-chocolate overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1920&q=85" 
+        alt="Menu Background" 
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/60"></div>
+    </div>
+    <div class="relative z-10 max-w-container mx-auto px-6 lg:px-8 text-center text-white">
+      <p class="text-sm tracking-[0.3em] uppercase text-white mb-4" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">Discover Our Selection</p>
+      <h1 class="text-[48px] md:text-[64px] lg:text-[72px] font-display font-medium leading-tight mb-4" style="color: #FFD700; text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">
+        Our Menu
+      </h1>
+      <p class="text-lg md:text-xl text-white font-sans max-w-2xl mx-auto mb-8" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">
+        Handcrafted with love. From breakfast classics to specialty coffee, every item is made with care using the freshest ingredients.
+      </p>
+      <a 
+        href="https://order.toasttab.com/online/kimandjennyscafe-new-location-586-e-wheatland-rd"
+        target="_blank"
+        rel="noreferrer"
+        class="btn-primary inline-flex items-center gap-2">
+        <i class="fas fa-shopping-bag"></i>
+        Order Online
+      </a>
+    </div>
+  </section>
+
+  <!-- MENU CONTENT -->
+  <section class="section-padding">
+    <div class="max-w-container mx-auto px-6 lg:px-8">
+      
+      <!-- CATEGORY NAVIGATION -->
+      <div class="flex flex-wrap justify-center gap-3 mb-12 sticky top-24 z-30 bg-cream/95 backdrop-blur-sm py-4 rounded-2xl">
+        <a href="#coffee" class="px-5 py-2.5 rounded-full bg-primary text-white text-sm font-semibold hover:bg-primary-light transition-colors">Coffee</a>
+        <a href="#breakfast" class="px-5 py-2.5 rounded-full bg-white text-chocolate text-sm font-semibold border border-chocolate/10 hover:bg-chocolate hover:text-white transition-colors">Breakfast</a>
+        <a href="#burgers" class="px-5 py-2.5 rounded-full bg-white text-chocolate text-sm font-semibold border border-chocolate/10 hover:bg-chocolate hover:text-white transition-colors">Burgers</a>
+        <a href="#sandwiches" class="px-5 py-2.5 rounded-full bg-white text-chocolate text-sm font-semibold border border-chocolate/10 hover:bg-chocolate hover:text-white transition-colors">Sandwiches</a>
+        <a href="#desserts" class="px-5 py-2.5 rounded-full bg-white text-chocolate text-sm font-semibold border border-chocolate/10 hover:bg-chocolate hover:text-white transition-colors">Desserts</a>
+        <a href="#beverages" class="px-5 py-2.5 rounded-full bg-white text-chocolate text-sm font-semibold border border-chocolate/10 hover:bg-chocolate hover:text-white transition-colors">Beverages</a>
+      </div>
+
+      <!-- COFFEE & DRINKS -->
+      <div id="coffee" class="mb-20">
+        <div class="flex items-center gap-4 mb-10">
+          <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center">
+            <i class="fas fa-coffee text-2xl text-primary"></i>
+          </div>
           <div>
-            <h2 class="mb-8 border-b border-stone-200 pb-4 text-[32px]">Breakfast</h2>
-            <ul>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Breakfast #1</h3><span class="text-lg font-semibold text-[#7A6A4F]">$9.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Breakfast #2</h3><span class="text-lg font-semibold text-[#7A6A4F]">$8.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Chicken &amp; Waffles</h3><span class="text-lg font-semibold text-[#7A6A4F]">$17.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Fluffy Waffle (with bacon/sausage)</h3><span class="text-lg font-semibold text-[#7A6A4F]">$11.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Double Pancake</h3><span class="text-lg font-semibold text-[#7A6A4F]">$9.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Triple Pancake</h3><span class="text-lg font-semibold text-[#7A6A4F]">$11.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Ruben Bowl</h3><span class="text-lg font-semibold text-[#7A6A4F]">$10.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">French Toast</h3><span class="text-lg font-semibold text-[#7A6A4F]">$10.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Breakfast Sandwich</h3><span class="text-lg font-semibold text-[#7A6A4F]">$10.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Breakfast Tacos</h3><span class="text-lg font-semibold text-[#7A6A4F]">$11.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Country Fried Steak Breakfast</h3><span class="text-lg font-semibold text-[#7A6A4F]">$17.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Chicken Fried Chicken Breakfast</h3><span class="text-lg font-semibold text-[#7A6A4F]">$17.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Migas</h3><span class="text-lg font-semibold text-[#7A6A4F]">$15.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Big Tex Breakfast</h3><span class="text-lg font-semibold text-[#7A6A4F]">$27.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Chili Cheese Omelette</h3><span class="text-lg font-semibold text-[#7A6A4F]">$11.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Meat Lovers Omelette</h3><span class="text-lg font-semibold text-[#7A6A4F]">$13.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Western Omelette</h3><span class="text-lg font-semibold text-[#7A6A4F]">$11.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Cheese Omelette</h3><span class="text-lg font-semibold text-[#7A6A4F]">$10.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Veggie Omelette</h3><span class="text-lg font-semibold text-[#7A6A4F]">$11.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Denver Omelette</h3><span class="text-lg font-semibold text-[#7A6A4F]">$12.95</span></li>
-            </ul>
+            <p class="text-xs tracking-[0.3em] uppercase text-primary font-semibold">Brewed Fresh</p>
+            <h2 class="text-h3">Coffee & Drinks</h2>
           </div>
-        </section>
-
-        <section class="rounded-xl border border-stone-200 bg-white p-8 md:p-12">
-          <div class="relative z-10">
-            <h2 class="mb-8 border-b border-stone-200 pb-4 text-[32px]">Add-Ons</h2>
-            <ul>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Single Pancake</h3><span class="text-lg font-semibold text-[#7A6A4F]">$5.00</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">French Toast (1 slice)</h3><span class="text-lg font-semibold text-[#7A6A4F]">$3.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Waffle</h3><span class="text-lg font-semibold text-[#7A6A4F]">$5.50</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Cheese</h3><span class="text-lg font-semibold text-[#7A6A4F]">$1.00</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Hashbrowns</h3><span class="text-lg font-semibold text-[#7A6A4F]">$3.00</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">White / Wheat / Texas Toast</h3><span class="text-lg font-semibold text-[#7A6A4F]">$2.00</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Grits Cup / Bowl</h3><span class="text-lg font-semibold text-[#7A6A4F]">$3.00 / $5.00</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Oatmeal Cup / Bowl</h3><span class="text-lg font-semibold text-[#7A6A4F]">$3.00 / $5.00</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Salsa / Dressing</h3><span class="text-lg font-semibold text-[#7A6A4F]">$1.00</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Peppered Gravy</h3><span class="text-lg font-semibold text-[#7A6A4F]">$2.00</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Biscuits &amp; Gravy (1 / 2)</h3><span class="text-lg font-semibold text-[#7A6A4F]">$2.00 / $4.00</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Ham / Bacon (2) / Sausage (2) / Turkey Bacon</h3><span class="text-lg font-semibold text-[#7A6A4F]">$3.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Bacon + Sausage combo</h3><span class="text-lg font-semibold text-[#7A6A4F]">$4.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Egg (1 / 2)</h3><span class="text-lg font-semibold text-[#7A6A4F]">$3.25 / $6.50</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Bowl of Chili</h3><span class="text-lg font-semibold text-[#7A6A4F]">$8.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Veggies (Jalapeños, Peppers, Onions, Tomatoes)</h3><span class="text-lg font-semibold text-[#7A6A4F]">$1.00+</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Tortillas (Corn/Flour) / Cornbread</h3><span class="text-lg font-semibold text-[#7A6A4F]">$1.50</span></li>
-              <li class="flex items-baseline justify-between gap-6 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Fried Fish (1 pc)</h3><span class="text-lg font-semibold text-[#7A6A4F]">$5.00</span></li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="rounded-xl border border-stone-200 bg-white p-8 md:p-12">
-          <div class="relative z-10">
-            <h2 class="mb-8 border-b border-stone-200 pb-4 text-[32px]">Kids Menu</h2>
-            <ul>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Single Pancake</h3><span class="text-lg font-semibold text-[#7A6A4F]">$5.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">1 Egg + Bacon/Sausage + Toast</h3><span class="text-lg font-semibold text-[#7A6A4F]">$6.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Grilled Cheese + Fries</h3><span class="text-lg font-semibold text-[#7A6A4F]">$7.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Chicken Nuggets (6 pcs) + Fries</h3><span class="text-lg font-semibold text-[#7A6A4F]">$7.95</span></li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="rounded-xl border border-stone-200 bg-white p-8 md:p-12">
-          <div class="relative z-10">
-            <h2 class="mb-8 border-b border-stone-200 pb-4 text-[32px]">Beverages</h2>
-            <ul>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Bottomless Coffee</h3><span class="text-lg font-semibold text-[#7A6A4F]">$2.99</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Hot Tea</h3><span class="text-lg font-semibold text-[#7A6A4F]">$2.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Hot Chocolate</h3><span class="text-lg font-semibold text-[#7A6A4F]">$4.50</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Soft Drinks (RC, 7UP, Root Beer)</h3><span class="text-lg font-semibold text-[#7A6A4F]">$3.50</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Lemonade</h3><span class="text-lg font-semibold text-[#7A6A4F]">$3.50</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Sweet / Unsweet / Half &amp; Half Tea</h3><span class="text-lg font-semibold text-[#7A6A4F]">$3.50</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Juice (Orange / Apple)</h3><span class="text-lg font-semibold text-[#7A6A4F]">$5.00</span></li>
-              <li class="flex items-baseline justify-between gap-6 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Milk / Chocolate Milk</h3><span class="text-lg font-semibold text-[#7A6A4F]">$5.00</span></li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="rounded-xl border border-stone-200 bg-white p-8 md:p-12">
-          <div class="relative z-10">
-            <h2 class="mb-8 border-b border-stone-200 pb-4 text-[32px]">Retail Items</h2>
-            <ul>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Coffee Cup</h3><span class="text-lg font-semibold text-[#7A6A4F]">$20.00</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Tumbler</h3><span class="text-lg font-semibold text-[#7A6A4F]">$20.00</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">K&amp;J T-Shirt</h3><span class="text-lg font-semibold text-[#7A6A4F]">$25.00</span></li>
-              <li class="flex items-baseline justify-between gap-6 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">K&amp;J Hat</h3><span class="text-lg font-semibold text-[#7A6A4F]">$20.00</span></li>
-            </ul>
-          </div>
-        </section>
-
-      </div>
-
-      <div class="space-y-8 lg:space-y-12">
-
-        <section class="rounded-xl border border-stone-200 bg-white p-8 md:p-12">
-          <div class="relative z-10">
-            <h2 class="mb-8 border-b border-stone-200 pb-4 text-[32px]">Comfort Food (Plates)</h2>
-            <ul>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">2 pcs Fish + 2 sides</h3><span class="text-lg font-semibold text-[#7A6A4F]">$14.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">3 pcs Fish + 2 sides</h3><span class="text-lg font-semibold text-[#7A6A4F]">$16.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Chicken Fried Chicken</h3><span class="text-lg font-semibold text-[#7A6A4F]">$16.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Monterey Chicken</h3><span class="text-lg font-semibold text-[#7A6A4F]">$16.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Grilled Chicken Platter</h3><span class="text-lg font-semibold text-[#7A6A4F]">$14.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Country Fried Steak</h3><span class="text-lg font-semibold text-[#7A6A4F]">$17.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Chopped Steak</h3><span class="text-lg font-semibold text-[#7A6A4F]">$13.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Veggie Plate</h3><span class="text-lg font-semibold text-[#7A6A4F]">$11.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Chicken Tenders (3 pcs)</h3><span class="text-lg font-semibold text-[#7A6A4F]">$13.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Steak Fingers (4 pcs)</h3><span class="text-lg font-semibold text-[#7A6A4F]">$13.95</span></li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="rounded-xl border border-stone-200 bg-white p-8 md:p-12">
-          <div class="relative z-10">
-            <h2 class="mb-8 border-b border-stone-200 pb-4 text-[32px]">Char-Grilled Burgers</h2>
-            <ul>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Burger</h3><span class="text-lg font-semibold text-[#7A6A4F]">$9.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Cheeseburger</h3><span class="text-lg font-semibold text-[#7A6A4F]">$10.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Swiss Mushroom Burger</h3><span class="text-lg font-semibold text-[#7A6A4F]">$12.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Double Meat Burger</h3><span class="text-lg font-semibold text-[#7A6A4F]">$13.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Double Meat Cheeseburger</h3><span class="text-lg font-semibold text-[#7A6A4F]">$14.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Bacon Cheeseburger</h3><span class="text-lg font-semibold text-[#7A6A4F]">$12.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Chili Cheese Burger</h3><span class="text-lg font-semibold text-[#7A6A4F]">$12.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Bacon Ranch Burger</h3><span class="text-lg font-semibold text-[#7A6A4F]">$12.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Blue Cheese Burger</h3><span class="text-lg font-semibold text-[#7A6A4F]">$12.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Jalapeño Burger</h3><span class="text-lg font-semibold text-[#7A6A4F]">$12.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Avocado Burger</h3><span class="text-lg font-semibold text-[#7A6A4F]">$12.95</span></li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="rounded-xl border border-stone-200 bg-white p-8 md:p-12">
-          <div class="relative z-10">
-            <h2 class="mb-8 border-b border-stone-200 pb-4 text-[32px]">Sandwiches</h2>
-            <ul>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Patty Melt</h3><span class="text-lg font-semibold text-[#7A6A4F]">$11.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Beef Philly Cheesesteak</h3><span class="text-lg font-semibold text-[#7A6A4F]">$13.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">BLT Sandwich</h3><span class="text-lg font-semibold text-[#7A6A4F]">$9.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Chicken Sandwich</h3><span class="text-lg font-semibold text-[#7A6A4F]">$13.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Hot Honey Chicken Sandwich</h3><span class="text-lg font-semibold text-[#7A6A4F]">$14.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Hot Ham &amp; Cheese</h3><span class="text-lg font-semibold text-[#7A6A4F]">$10.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Avocado Toast</h3><span class="text-lg font-semibold text-[#7A6A4F]">$12.95</span></li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="rounded-xl border border-stone-200 bg-white p-8 md:p-12">
-          <div class="relative z-10">
-            <h2 class="mb-8 border-b border-stone-200 pb-4 text-[32px]">Salads &amp; Tacos</h2>
-            <ul>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Chef Salad</h3><span class="text-lg font-semibold text-[#7A6A4F]">$12.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">House Salad</h3><span class="text-lg font-semibold text-[#7A6A4F]">$5.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">BLT Salad</h3><span class="text-lg font-semibold text-[#7A6A4F]">$9.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Chicken Tender Salad</h3><span class="text-lg font-semibold text-[#7A6A4F]">$13.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">3 Beef Tacos</h3><span class="text-lg font-semibold text-[#7A6A4F]">$9.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Taco Salad</h3><span class="text-lg font-semibold text-[#7A6A4F]">Varies</span></li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="rounded-xl border border-stone-200 bg-white p-8 md:p-12">
-          <div class="relative z-10">
-            <h2 class="mb-8 border-b border-stone-200 pb-4 text-[32px]">Sides</h2>
-            <ul>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Buttered Carrots / Green Beans</h3><span class="text-lg font-semibold text-[#7A6A4F]">$3.89</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Mashed Potatoes / Sweet Corn</h3><span class="text-lg font-semibold text-[#7A6A4F]">$3.89</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Fries / Fried Okra / Potato Salad</h3><span class="text-lg font-semibold text-[#7A6A4F]">$3.89</span></li>
-              <li class="flex items-baseline justify-between gap-6 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Chili Cheese Fries</h3><span class="text-lg font-semibold text-[#7A6A4F]">$7.95</span></li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="rounded-xl border border-stone-200 bg-white p-8 md:p-12">
-          <div class="relative z-10">
-            <h2 class="mb-8 border-b border-stone-200 pb-4 text-[32px]">Desserts &amp; Shakes</h2>
-            <ul>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Pie (Cherry, Apple, Chocolate)</h3><span class="text-lg font-semibold text-[#7A6A4F]">$6.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Cake / Cinnamon Roll</h3><span class="text-lg font-semibold text-[#7A6A4F]">$6.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Single Scoop / Double Scoop</h3><span class="text-lg font-semibold text-[#7A6A4F]">$2.95 / $3.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Waffle Cone (Single / Double)</h3><span class="text-lg font-semibold text-[#7A6A4F]">$4.95 / $5.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Sundae (Single / Double)</h3><span class="text-lg font-semibold text-[#7A6A4F]">$7.95 / $8.95</span></li>
-              <li class="flex items-baseline justify-between gap-6 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Shakes (Vanilla, Chocolate, Strawberry)</h3><span class="text-lg font-semibold text-[#7A6A4F]">$6.95</span></li>
-            </ul>
-          </div>
-        </section>
-
-      </div>
-
-    </div>
-
-    <section class="mt-12 rounded-xl border border-stone-200 bg-white p-8 md:p-12">
-      <div class="relative z-10">
-        <h2 class="mb-8 border-b border-stone-200 pb-4 text-[32px]">Coffee &amp; Drinks</h2>
-        <ul>
-          <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Drip Coffee</h3><span class="text-lg font-semibold text-[#7A6A4F]">$2.95</span></li>
-          <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Americano</h3><span class="text-lg font-semibold text-[#7A6A4F]">$3.95</span></li>
-          <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Honey Cinnamon Latte</h3><span class="text-lg font-semibold text-[#7A6A4F]">$5.75</span></li>
-          <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Cold Brew</h3><span class="text-lg font-semibold text-[#7A6A4F]">$4.95</span></li>
-          <li class="flex items-baseline justify-between gap-6 border-b border-stone-200 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Chai Latte</h3><span class="text-lg font-semibold text-[#7A6A4F]">$4.75</span></li>
-          <li class="flex items-baseline justify-between gap-6 py-4"><h3 class="text-xs font-bold uppercase tracking-widest text-zinc-500 md:text-sm">Hot Chocolate</h3><span class="text-lg font-semibold text-[#7A6A4F]">$3.95</span></li>
-        </ul>
-      </div>
-    </section>
+        </div>
         
-    <div class="mx-auto mt-16 max-w-4xl rounded-xl border border-stone-200 bg-white p-10 text-center text-cafe-text">
-      <div class="relative z-10">
-        <h4 class="mb-4 text-[32px]">Your usual, ready when you arrive.</h4>
-        <p class="mx-auto mb-8 max-w-lg text-base text-zinc-600">Order ahead and we will have it hot and fresh at pickup.</p>
-        <a
-          href="https://order.toasttab.com/online/kimandjennyscafe-new-location-586-e-wheatland-rd"
-          target="_blank"
-          rel="noreferrer"
-          class="inline-flex h-12 items-center justify-center rounded-lg bg-[#7A6A4F] px-6 text-sm font-medium text-white transition-all hover:bg-[#6A5A3F]">
-          Order Online Now
-        </a>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Coffee Item 1 -->
+          <div class="card p-6 flex items-center gap-4">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=200&q=80" alt="Espresso" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Drip Coffee</h4>
+              <p class="text-text-muted text-sm">Freshly brewed, bottomless</p>
+            </div>
+            <span class="text-xl font-semibold text-primary">$2.95</span>
+          </div>
+
+          <!-- Coffee Item 2 -->
+          <div class="card p-6 flex items-center gap-4">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=200&q=80" alt="Latte" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Americano</h4>
+              <p class="text-text-muted text-sm">Espresso with hot water</p>
+            </div>
+            <span class="text-xl font-semibold text-primary">$3.95</span>
+          </div>
+
+          <!-- Coffee Item 3 -->
+          <div class="card p-6 flex items-center gap-4 border-2 border-primary/20">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1559586616-361e18714958?w=200&q=80" alt="Cold Brew" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Cold Brew</h4>
+              <p class="text-text-muted text-sm">20-hour steeped</p>
+              <span class="inline-block mt-1 bg-primary/10 text-primary text-xs font-semibold px-2 py-0.5 rounded">Popular</span>
+            </div>
+            <span class="text-xl font-semibold text-primary">$4.95</span>
+          </div>
+
+          <!-- Coffee Item 4 -->
+          <div class="card p-6 flex items-center gap-4">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=200&q=80" alt="Latte" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Honey Cinnamon Latte</h4>
+              <p class="text-text-muted text-sm">House specialty</p>
+            </div>
+            <span class="text-xl font-semibold text-primary">$5.75</span>
+          </div>
+
+          <!-- Coffee Item 5 -->
+          <div class="card p-6 flex items-center gap-4">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1515825838458-f2a94b20105a?w=200&q=80" alt="Chai" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Chai Latte</h4>
+              <p class="text-text-muted text-sm">Spiced tea with steamed milk</p>
+            </div>
+            <span class="text-xl font-semibold text-primary">$4.75</span>
+          </div>
+
+          <!-- Coffee Item 6 -->
+          <div class="card p-6 flex items-center gap-4">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=200&q=80" alt="Hot Chocolate" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Hot Chocolate</h4>
+              <p class="text-text-muted text-sm">Rich and creamy</p>
+            </div>
+            <span class="text-xl font-semibold text-primary">$3.95</span>
+          </div>
+        </div>
       </div>
+
+      <!-- BREAKFAST -->
+      <div id="breakfast" class="mb-20">
+        <div class="flex items-center gap-4 mb-10">
+          <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center">
+            <i class="fas fa-sun text-2xl text-primary"></i>
+          </div>
+          <div>
+            <p class="text-xs tracking-[0.3em] uppercase text-primary font-semibold">Morning Favorites</p>
+            <h2 class="text-h3">Breakfast</h2>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Breakfast Item 1 -->
+          <div class="card p-6 flex items-center gap-4 border-2 border-primary/20">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=200&q=80" alt="Pancakes" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Chicken & Waffles</h4>
+              <p class="text-text-muted text-sm">Crispy chicken with fluffy waffles</p>
+              <span class="inline-block mt-1 bg-accent/10 text-accent text-xs font-semibold px-2 py-0.5 rounded">Chef's Pick</span>
+            </div>
+            <span class="text-xl font-semibold text-primary">$17.95</span>
+          </div>
+
+          <!-- Breakfast Item 2 -->
+          <div class="card p-6 flex items-center gap-4">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=200&q=80" alt="French Toast" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">French Toast</h4>
+              <p class="text-text-muted text-sm">Classic brioche with syrup</p>
+            </div>
+            <span class="text-xl font-semibold text-primary">$10.95</span>
+          </div>
+
+          <!-- Breakfast Item 3 -->
+          <div class="card p-6 flex items-center gap-4">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1525351484163-7529414395d8?w=200&q=80" alt="Omelette" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Western Omelette</h4>
+              <p class="text-text-muted text-sm">Ham, peppers, onions, cheese</p>
+            </div>
+            <span class="text-xl font-semibold text-primary">$11.95</span>
+          </div>
+
+          <!-- Breakfast Item 4 -->
+          <div class="card p-6 flex items-center gap-4">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1550507992-eb63ffee0847?w=200&q=80" alt="Breakfast Tacos" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Breakfast Tacos</h4>
+              <p class="text-text-muted text-sm">Texas-style with salsa</p>
+            </div>
+            <span class="text-xl font-semibold text-primary">$11.95</span>
+          </div>
+
+          <!-- Breakfast Item 5 -->
+          <div class="card p-6 flex items-center gap-4">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=200&q=80" alt="Migas" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Migas</h4>
+              <p class="text-text-muted text-sm">Scrambled eggs with tortilla strips</p>
+            </div>
+            <span class="text-xl font-semibold text-primary">$15.95</span>
+          </div>
+
+          <!-- Breakfast Item 6 -->
+          <div class="card p-6 flex items-center gap-4">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1478369402113-1fd53f540a8b?w=200&q=80" alt="Big Tex Breakfast" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Big Tex Breakfast</h4>
+              <p class="text-text-muted text-sm">The ultimate feast for two</p>
+            </div>
+            <span class="text-xl font-semibold text-primary">$27.95</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- BURGERS -->
+      <div id="burgers" class="mb-20">
+        <div class="flex items-center gap-4 mb-10">
+          <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center">
+            <i class="fas fa-hamburger text-2xl text-primary"></i>
+          </div>
+          <div>
+            <p class="text-xs tracking-[0.3em] uppercase text-primary font-semibold">Char-Grilled</p>
+            <h2 class="text-h3">Burgers</h2>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Burger Item 1 -->
+          <div class="card p-6 flex items-center gap-4">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=200&q=80" alt="Burger" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Cheeseburger</h4>
+              <p class="text-text-muted text-sm">Classic with American cheese</p>
+            </div>
+            <span class="text-xl font-semibold text-primary">$10.95</span>
+          </div>
+
+          <!-- Burger Item 2 -->
+          <div class="card p-6 flex items-center gap-4 border-2 border-primary/20">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=200&q=80" alt="Bacon Burger" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Bacon Cheeseburger</h4>
+              <p class="text-text-muted text-sm">Crispy bacon and cheese</p>
+              <span class="inline-block mt-1 bg-primary/10 text-primary text-xs font-semibold px-2 py-0.5 rounded">Best Seller</span>
+            </div>
+            <span class="text-xl font-semibold text-primary">$12.95</span>
+          </div>
+
+          <!-- Burger Item 3 -->
+          <div class="card p-6 flex items-center gap-4">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=200&q=80" alt="Mushroom Burger" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Swiss Mushroom</h4>
+              <p class="text-text-muted text-sm">Sautéed mushrooms & Swiss</p>
+            </div>
+            <span class="text-xl font-semibold text-primary">$12.95</span>
+          </div>
+
+          <!-- Burger Item 4 -->
+          <div class="card p-6 flex items-center gap-4">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=200&q=80" alt="Avocado Burger" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Avocado Burger</h4>
+              <p class="text-text-muted text-sm">Fresh avocado slices</p>
+            </div>
+            <span class="text-xl font-semibold text-primary">$12.95</span>
+          </div>
+
+          <!-- Burger Item 5 -->
+          <div class="card p-6 flex items-center gap-4">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1561758033-d8f2813a24dc?w=200&q=80" alt="Double Burger" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Double Meat Cheese</h4>
+              <p class="text-text-muted text-sm">Two patties, double cheese</p>
+            </div>
+            <span class="text-xl font-semibold text-primary">$14.95</span>
+          </div>
+
+          <!-- Burger Item 6 -->
+          <div class="card p-6 flex items-center gap-4">
+            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=200&q=80" alt="Chili Burger" class="w-full h-full object-cover"/>
+            </div>
+            <div class="flex-grow">
+              <h4 class="font-display text-lg mb-1">Chili Cheese Burger</h4>
+              <p class="text-text-muted text-sm">Topped with our famous chili</p>
+            </div>
+            <span class="text-xl font-semibold text-primary">$12.95</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ORDER ONLINE CTA -->
+      <div class="text-center mt-16 bg-white rounded-2xl p-10 lg:p-16 shadow-card">
+        <div class="max-w-2xl mx-auto">
+          <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-mobile-alt text-3xl text-primary"></i>
+          </div>
+          <h3 class="text-h3 mb-4">Order Online for Pickup</h3>
+          <p class="text-text-light text-lg mb-8">
+            Skip the line and have your favorites ready when you arrive. Order ahead and we'll have it hot and fresh waiting for you.
+          </p>
+          <a 
+            href="https://order.toasttab.com/online/kimandjennyscafe-new-location-586-e-wheatland-rd"
+            target="_blank"
+            rel="noreferrer"
+            class="btn-primary inline-flex items-center gap-2 text-lg px-10 py-4">
+            <i class="fas fa-shopping-bag"></i>
+            Order Online Now
+          </a>
+        </div>
+      </div>
+
     </div>
-  </div>
+  </section>
+
 </main>

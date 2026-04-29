@@ -1,69 +1,78 @@
-<header class="sticky top-0 z-50 w-full bg-bone/95 backdrop-blur-sm border-b border-chocolate/10">
-  <nav class="max-w-container mx-auto px-5 flex h-20 w-full items-center justify-between">
-    <a routerLink="/" (click)="closeMobileMenu()" class="brand-logo">
-      <span class="block">
-        <span class="font-serif font-normal text-chocolate text-2xl">
-          Kim <span class="italic">&amp;</span> Jenny's
-        </span>
+<header 
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+  [class.bg-white/95]="hasScrolled"
+  [class.backdrop-blur-md]="hasScrolled"
+  [class.shadow-nav]="hasScrolled"
+  [class.bg-transparent]="!hasScrolled">
+  <nav class="max-w-container mx-auto px-6 lg:px-8 flex h-20 lg:h-24 w-full items-center justify-between">
+    <!-- Logo -->
+    <a routerLink="/" (click)="closeMobileMenu()" class="flex flex-col">
+      <span class="font-serif text-2xl lg:text-3xl font-medium text-chocolate tracking-tight">
+        Kim <span class="italic text-primary">&amp;</span> Jenny's
       </span>
-      <span class="block text-[9px] tracking-[0.3em] uppercase text-chocolate/60 mt-1">CAFE</span>
+      <span class="text-[10px] tracking-[0.3em] uppercase text-chocolate/60 font-medium">CAFE</span>
     </a>
 
-    <div class="hidden items-center gap-8 md:flex">
+    <!-- Desktop Navigation -->
+    <div class="hidden lg:flex items-center gap-8">
       <a
-        class="text-sm text-chocolate/70 hover:text-chocolate transition-colors"
+        class="text-[15px] text-chocolate/80 hover:text-primary transition-colors font-medium"
         routerLink="/"
         [routerLinkActiveOptions]="{ exact: true }"
-        routerLinkActive="text-chocolate font-medium">
+        routerLinkActive="text-primary">
         Home
       </a>
-      <a class="text-sm text-chocolate/70 hover:text-chocolate transition-colors" routerLink="/menu" routerLinkActive="text-chocolate font-medium">Menu</a>
-      <a class="text-sm text-chocolate/70 hover:text-chocolate transition-colors" routerLink="/about" routerLinkActive="text-chocolate font-medium">About</a>
-      <a class="text-sm text-chocolate/70 hover:text-chocolate transition-colors" routerLink="/location" routerLinkActive="text-chocolate font-medium">Location</a>
-      <a class="text-sm text-chocolate/70 hover:text-chocolate transition-colors" routerLink="/contact" routerLinkActive="text-chocolate font-medium">Contact</a>
+      <a class="text-[15px] text-chocolate/80 hover:text-primary transition-colors font-medium" routerLink="/menu" routerLinkActive="text-primary">Menu</a>
+      <a class="text-[15px] text-chocolate/80 hover:text-primary transition-colors font-medium" routerLink="/visit" routerLinkActive="text-primary">Location</a>
+      <a class="text-[15px] text-chocolate/80 hover:text-primary transition-colors font-medium" routerLink="/contact" routerLinkActive="text-primary">Contact</a>
     </div>
 
+    <!-- CTA Button -->
     <a
-      class="hidden md:inline-flex items-center justify-center bg-chocolate text-bone text-sm px-6 py-2.5 hover:bg-chocolate-light transition-colors"
+      class="hidden lg:inline-flex items-center justify-center bg-primary text-white text-sm font-semibold px-6 py-3 rounded-lg hover:bg-primary-light transition-all hover:shadow-lg hover:-translate-y-0.5"
       routerLink="/menu">
       View Menu
     </a>
 
+    <!-- Mobile Menu Button -->
     <button
       type="button"
-      class="inline-flex h-10 w-10 items-center justify-center bg-bone text-chocolate hover:bg-bone/80 transition-colors md:hidden"
+      class="inline-flex h-12 w-12 items-center justify-center rounded-lg text-chocolate hover:bg-chocolate/5 transition-colors lg:hidden"
       aria-label="Toggle menu"
       aria-controls="mobile-menu"
       [attr.aria-expanded]="isMobileMenuOpen"
       (click)="toggleMobileMenu()">
-      <svg *ngIf="!isMobileMenuOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
+      <svg *ngIf="!isMobileMenuOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
       </svg>
-      <svg *ngIf="isMobileMenuOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      <svg *ngIf="isMobileMenuOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
       </svg>
     </button>
   </nav>
 
+  <!-- Mobile Menu -->
   <div
     id="mobile-menu"
-    class="border-t border-chocolate/10 bg-bone md:hidden overflow-hidden transition-all duration-300 ease-out"
+    class="lg:hidden bg-white border-t border-chocolate/10 overflow-hidden transition-all duration-300 ease-out"
     [class.max-h-0]="!isMobileMenuOpen"
     [class.opacity-0]="!isMobileMenuOpen"
-    [class.-translate-y-1]="!isMobileMenuOpen"
+    [class.-translate-y-2]="!isMobileMenuOpen"
     [class.pointer-events-none]="!isMobileMenuOpen"
     [class.max-h-96]="isMobileMenuOpen"
     [class.opacity-100]="isMobileMenuOpen"
     [class.translate-y-0]="isMobileMenuOpen">
-    <div class="max-w-container mx-auto px-5 flex flex-col gap-1 py-4">
-      <a class="px-3 py-2 text-sm text-chocolate/70 hover:text-chocolate transition-colors" routerLink="/" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="text-chocolate font-medium" (click)="closeMobileMenu()">Home</a>
-      <a class="px-3 py-2 text-sm text-chocolate/70 hover:text-chocolate transition-colors" routerLink="/menu" routerLinkActive="text-chocolate font-medium" (click)="closeMobileMenu()">Menu</a>
-      <a class="px-3 py-2 text-sm text-chocolate/70 hover:text-chocolate transition-colors" routerLink="/about" routerLinkActive="text-chocolate font-medium" (click)="closeMobileMenu()">About</a>
-      <a class="px-3 py-2 text-sm text-chocolate/70 hover:text-chocolate transition-colors" routerLink="/location" routerLinkActive="text-chocolate font-medium" (click)="closeMobileMenu()">Location</a>
-      <a class="px-3 py-2 text-sm text-chocolate/70 hover:text-chocolate transition-colors" routerLink="/contact" routerLinkActive="text-chocolate font-medium" (click)="closeMobileMenu()">Contact</a>
+    <div class="max-w-container mx-auto px-6 flex flex-col gap-1 py-6">
+      <a class="px-4 py-3 text-[16px] text-chocolate/80 hover:text-primary hover:bg-cream rounded-lg transition-colors font-medium" routerLink="/" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="text-primary bg-cream" (click)="closeMobileMenu()">Home</a>
+      <a class="px-4 py-3 text-[16px] text-chocolate/80 hover:text-primary hover:bg-cream rounded-lg transition-colors font-medium" routerLink="/menu" routerLinkActive="text-primary bg-cream" (click)="closeMobileMenu()">Menu</a>
+      <a class="px-4 py-3 text-[16px] text-chocolate/80 hover:text-primary hover:bg-cream rounded-lg transition-colors font-medium" routerLink="/visit" routerLinkActive="text-primary bg-cream" (click)="closeMobileMenu()">Location</a>
+      <a class="px-4 py-3 text-[16px] text-chocolate/80 hover:text-primary hover:bg-cream rounded-lg transition-colors font-medium" routerLink="/contact" routerLinkActive="text-primary bg-cream" (click)="closeMobileMenu()">Contact</a>
 
       <a
-        class="mt-2 inline-flex items-center justify-center bg-chocolate text-bone text-sm px-6 py-2.5 hover:bg-chocolate-light transition-colors"
+        class="mt-4 inline-flex items-center justify-center bg-primary text-white text-[16px] font-semibold px-6 py-3.5 rounded-lg hover:bg-primary-light transition-colors"
         routerLink="/menu"
         (click)="closeMobileMenu()">
         View Menu
@@ -71,3 +80,6 @@
     </div>
   </div>
 </header>
+
+<!-- Spacer for fixed header -->
+<div class="h-20 lg:h-24"></div>

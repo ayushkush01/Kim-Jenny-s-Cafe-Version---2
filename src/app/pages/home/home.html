@@ -1,63 +1,371 @@
-<main class="min-h-screen bg-[#F7F4EE] font-serif text-[#322018] selection:bg-[#322018]/10">
-  
-  <section class="mx-auto max-w-[1400px] px-6 py-12 lg:px-16 lg:py-20">
-    <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-20">
+<main class="min-h-screen bg-cream">
+
+  <!-- HERO SECTION - Full Viewport -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1920&q=80" 
+        alt="Cafe Interior" 
+        class="w-full h-full object-cover"
+        style="object-position: center;"
+      />
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
+      <p class="text-sm md:text-base tracking-[0.3em] uppercase text-white mb-6" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">
+        Est. 2015 &mdash; Duncanville, TX
+      </p>
       
-      <div class="order-2 lg:order-1">
-        <p class="mb-6 text-[13px] font-medium tracking-[0.15em] text-[#8b7355] opacity-80">
-          Family-owned cafe in Duncanville
-        </p>
-        
-        <h1 class="mb-8 text-[44px] font-medium leading-[1.1] tracking-tight text-[#322018] md:text-6xl lg:text-7xl">
-          Discover Art of
-Perfect Coffee.
-        </h1>
-        
-        <p class="mb-10 max-w-md text-[17px] leading-relaxed text-[#322018]/80 font-sans">
-          We built Kim & Jenny's Cafe to feel warm, easy, and welcoming. Come by for breakfast, lunch, coffee, or a quick pickup order on the way through town.
-        </p>
-        
-        <div class="mb-16 flex flex-col gap-4 sm:flex-row">
-          <a routerLink="/menu" 
-             class="inline-flex h-14 items-center justify-center rounded-xl bg-[#322018] px-10 text-[15px] font-bold text-white transition-transform hover:scale-[1.02] active:scale-95 shadow-lg shadow-[#322018]/20">
-            View Menu
-          </a>
-          <a routerLink="/location" 
-             class="inline-flex h-14 items-center justify-center rounded-xl border border-stone-300 bg-white/50 px-10 text-[15px] font-bold text-[#322018] backdrop-blur-sm transition-all hover:bg-white hover:shadow-md">
-            Visit Us
-          </a>
+      <h1 class="text-[40px] md:text-[56px] lg:text-[72px] font-display font-medium leading-[1.1] tracking-tight mb-6" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">
+        <span class="text-white">Welcome to</span><br/>
+        <span style="color: #F5DEB3;">Kim &amp; Jenny's</span> <span style="color: #F5DEB3;">Cafe</span>
+      </h1>
+      
+      <p class="text-[18px] md:text-[22px] text-white font-sans max-w-2xl mx-auto leading-relaxed mb-10" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">
+        Handcrafted Coffee &amp; Fresh Pastries in the Heart of Duncanville
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a routerLink="/menu" 
+           class="btn-primary text-[16px] px-8 py-4">
+          <i class="fas fa-utensils mr-2"></i>
+          View Our Menu
+        </a>
+        <a href="https://order.toasttab.com/online/kimandjennyscafe-new-location-586-e-wheatland-rd" 
+           target="_blank"
+           rel="noreferrer"
+           class="btn-outline text-[16px] px-8 py-4">
+          <i class="fas fa-shopping-bag mr-2"></i>
+          Order Online
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
+      <span class="text-[12px] tracking-[0.2em] uppercase text-white/60">Scroll Down</span>
+      <div class="w-px h-10 bg-gradient-to-b from-white/60 to-transparent"></div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US SECTION -->
+  <section class="section-padding bg-white">
+    <div class="max-w-container mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <p class="text-xs tracking-[0.3em] uppercase text-primary font-semibold mb-3">Why Choose Us</p>
+        <h2 class="text-h2">The Kim &amp; Jenny's Difference</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+        <!-- Feature 1 -->
+        <div class="text-center">
+          <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-primary/10 flex items-center justify-center">
+            <i class="fas fa-coffee text-3xl text-primary"></i>
+          </div>
+          <h3 class="text-h4 mb-3">Premium Beans</h3>
+          <p class="text-text-light leading-relaxed">
+            Ethically sourced from sustainable farms and freshly roasted in small batches for maximum flavor.
+          </p>
         </div>
-        
-        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          <div class="rounded-[24px] border border-stone-200/60 bg-white/40 p-8 backdrop-blur-sm">
-            <p class="mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-stone-400">ADDRESS</p>
-            <p class="text-[15px] font-medium leading-relaxed">
-              586 E Wheatland Rd<br>
-              Duncanville, TX 75116
-            </p>
+
+        <!-- Feature 2 -->
+        <div class="text-center">
+          <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-primary/10 flex items-center justify-center">
+            <i class="fas fa-user-tie text-3xl text-primary"></i>
           </div>
-          
-          <div class="rounded-[24px] border border-stone-200/60 bg-white/40 p-8 backdrop-blur-sm">
-            <p class="mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-stone-400">HOURS</p>
-            <p class="text-[15px] font-medium leading-relaxed">
-              Mon-Fri 7am-6pm<br>
-              Sat 8am-5pm, Sun 9am-4pm
-            </p>
+          <h3 class="text-h4 mb-3">Expert Baristas</h3>
+          <p class="text-text-light leading-relaxed">
+            Passionate coffee artisans dedicated to crafting the perfect cup, every single time.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="text-center">
+          <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-primary/10 flex items-center justify-center">
+            <i class="fas fa-heart text-3xl text-primary"></i>
           </div>
+          <h3 class="text-h4 mb-3">Cozy Atmosphere</h3>
+          <p class="text-text-light leading-relaxed">
+            Your neighborhood gathering spot. Warm, welcoming, and perfect for any occasion.
+          </p>
         </div>
       </div>
-      
-      <div class="order-1 lg:order-2">
-        <div class="relative overflow-hidden rounded-[48px] shadow-2xl">
-          <img 
-            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&q=90"
-            alt="Cafe Interior"
-            class="aspect-[4/5] w-full object-cover lg:aspect-[1/1.2]"
-            loading="eager"
-          />
+    </div>
+  </section>
+
+  <!-- FEATURED MENU PREVIEW -->
+  <section class="section-padding bg-cream">
+    <div class="max-w-container mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <p class="text-xs tracking-[0.3em] uppercase text-primary font-semibold mb-3">Our Menu</p>
+        <h2 class="text-h2">Customer Favorites</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Menu Item 1 -->
+        <div class="card overflow-hidden group">
+          <div class="relative h-64 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&q=80" 
+              alt="Classic Espresso"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div class="absolute top-4 right-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full">
+              Popular
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-display font-medium">Classic Espresso</h3>
+              <span class="text-xl font-semibold text-primary">$4.50</span>
+            </div>
+            <p class="text-text-light text-sm leading-relaxed">
+              Rich, bold, and perfectly balanced. Our signature single-origin espresso shot.
+            </p>
+          </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+        <div class="card overflow-hidden group">
+          <div class="relative h-64 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&q=80" 
+              alt="Vanilla Latte"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-display font-medium">Vanilla Latte</h3>
+              <span class="text-xl font-semibold text-primary">$5.50</span>
+            </div>
+            <p class="text-text-light text-sm leading-relaxed">
+              Smooth espresso with steamed milk and house-made vanilla syrup. A customer favorite.
+            </p>
+          </div>
+        </div>
+
+        <!-- Menu Item 3 -->
+        <div class="card overflow-hidden group">
+          <div class="relative h-64 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1559586616-361e18714958?w=600&q=80" 
+              alt="Cold Brew"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-display font-medium">Cold Brew</h3>
+              <span class="text-xl font-semibold text-primary">$4.75</span>
+            </div>
+            <p class="text-text-light text-sm leading-relaxed">
+              Steeped for 20 hours for a smooth, naturally sweet flavor with low acidity.
+            </p>
+          </div>
         </div>
       </div>
 
+      <div class="text-center mt-12">
+        <a routerLink="/menu" class="btn-secondary">
+          View Full Menu
+          <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
     </div>
   </section>
+
+  <!-- LOCATION PREVIEW -->
+  <section class="section-padding bg-white">
+    <div class="max-w-container mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Map -->
+        <div class="rounded-2xl overflow-hidden shadow-card h-[400px]">
+          <iframe
+            title="Kim and Jenny's Cafe Location"
+            class="w-full h-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.1234567890123!2d-96.9012345!3d32.6512345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDM5JzA0LjQiTiA5NsKwNTQnMDQuNSJX!5e0!3m2!1sen!2sus!4v1234567890123"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Info -->
+        <div>
+          <p class="text-xs tracking-[0.3em] uppercase text-primary font-semibold mb-3">Visit Us</p>
+          <h2 class="text-h2 mb-6">Come Say Hello</h2>
+          
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-display text-lg mb-1">Address</h4>
+                <p class="text-text-light">586 E Wheatland Rd<br>Duncanville, TX 75116</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-phone text-primary text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-display text-lg mb-1">Phone</h4>
+                <a href="tel:+12145550199" class="text-text-light hover:text-primary transition-colors">(214) 555-0199</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-clock text-primary text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-display text-lg mb-1">Hours</h4>
+                <p class="text-text-light">Mon–Fri: 7am – 6pm<br>Sat–Sun: 8am – 5pm</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <a routerLink="/visit" class="btn-primary">
+              <i class="fas fa-directions mr-2"></i>
+              Get Directions
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="section-padding bg-chocolate text-white">
+    <div class="max-w-container mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <p class="text-xs tracking-[0.3em] uppercase text-secondary font-semibold mb-3">Testimonials</p>
+        <h2 class="text-h2 text-white">What Our Customers Say</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+          <div class="flex gap-1 mb-4">
+            <i class="fas fa-star text-secondary"></i>
+            <i class="fas fa-star text-secondary"></i>
+            <i class="fas fa-star text-secondary"></i>
+            <i class="fas fa-star text-secondary"></i>
+            <i class="fas fa-star text-secondary"></i>
+          </div>
+          <div class="mb-4">
+            <i class="fas fa-quote-left text-secondary/40 text-3xl"></i>
+          </div>
+          <p class="text-white/90 leading-relaxed mb-6">
+            "Best coffee in Duncanville! The atmosphere is so cozy and the staff always remembers my order. It's my morning ritual."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center">
+              <span class="text-secondary font-semibold">SM</span>
+            </div>
+            <div>
+              <p class="font-medium text-white">Sarah M.</p>
+              <p class="text-white/60 text-sm">Regular Customer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+          <div class="flex gap-1 mb-4">
+            <i class="fas fa-star text-secondary"></i>
+            <i class="fas fa-star text-secondary"></i>
+            <i class="fas fa-star text-secondary"></i>
+            <i class="fas fa-star text-secondary"></i>
+            <i class="fas fa-star text-secondary"></i>
+          </div>
+          <div class="mb-4">
+            <i class="fas fa-quote-left text-secondary/40 text-3xl"></i>
+          </div>
+          <p class="text-white/90 leading-relaxed mb-6">
+            "The vanilla latte is absolute perfection. I've tried coffee shops all over DFW and this is by far my favorite."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center">
+              <span class="text-secondary font-semibold">JK</span>
+            </div>
+            <div>
+              <p class="font-medium text-white">James K.</p>
+              <p class="text-white/60 text-sm">Coffee Enthusiast</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+          <div class="flex gap-1 mb-4">
+            <i class="fas fa-star text-secondary"></i>
+            <i class="fas fa-star text-secondary"></i>
+            <i class="fas fa-star text-secondary"></i>
+            <i class="fas fa-star text-secondary"></i>
+            <i class="fas fa-star text-secondary"></i>
+          </div>
+          <div class="mb-4">
+            <i class="fas fa-quote-left text-secondary/40 text-3xl"></i>
+          </div>
+          <p class="text-white/90 leading-relaxed mb-6">
+            "Great spot for working remotely. Fast WiFi, delicious pastries, and the friendliest staff. Highly recommend!"
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center">
+              <span class="text-secondary font-semibold">ER</span>
+            </div>
+            <div>
+              <p class="font-medium text-white">Emily R.</p>
+              <p class="text-white/60 text-sm">Remote Worker</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA SECTION -->
+  <section class="relative py-32 lg:py-40 overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1920&q=85" 
+        alt="Coffee" 
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/60"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center text-white px-6 max-w-3xl mx-auto">
+      <h2 class="text-[36px] md:text-[48px] lg:text-[56px] font-display font-medium leading-tight mb-4">
+        Visit Us Today
+      </h2>
+      <p class="text-[18px] md:text-[20px] text-white/90 font-sans leading-relaxed mb-10">
+        Experience the difference of handcrafted coffee and genuine hospitality.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a routerLink="/visit" class="btn-primary text-[16px] px-8 py-4">
+          <i class="fas fa-map-marker-alt mr-2"></i>
+          Find Us
+        </a>
+        <a routerLink="/menu" class="btn-outline text-[16px] px-8 py-4">
+          <i class="fas fa-utensils mr-2"></i>
+          See Menu
+        </a>
+      </div>
+    </div>
+  </section>
+
 </main>
