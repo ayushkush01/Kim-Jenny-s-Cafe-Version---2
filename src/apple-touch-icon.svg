@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <!-- Cream background with rounded corners for Apple -->
+  <rect width="180" height="180" rx="40" fill="#FBF7F2"/>
+  <!-- KJ text in warm brown serif -->
+  <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="90" 
+        font-weight="600" 
+        fill="#3D1A0A">KJ</text>
+  <!-- Ampersand accent -->
+  <text x="50%" y="75%" dominant-baseline="middle" text-anchor="middle" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="36" 
+        font-style="italic"
+        fill="#8B4513">&amp;</text>
+</svg>

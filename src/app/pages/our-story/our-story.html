@@ -1,63 +1,97 @@
-<main class="min-h-screen bg-cream">
+<main class="min-h-screen">
 
-  <!-- SECTION 1: HERO - Full viewport height -->
-  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <!-- SECTION 1: HERO - Full viewport cinematic hero -->
+  <section class="hero-section relative h-screen flex items-center justify-center overflow-hidden">
     <!-- Background Image -->
     <div class="absolute inset-0 z-0">
       <img 
-        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1920&q=80" 
-        alt="Warm cozy cafe atmosphere with coffee" 
-        class="w-full h-full object-cover"
+        src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1920&q=85" 
+        alt="Coffee shop warm atmosphere" 
+        class="w-full h-full object-cover hero-bg"
       />
-      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="absolute inset-0 bg-[rgba(30,15,5,0.65)]"></div>
     </div>
 
     <!-- Hero Content -->
-    <div class="relative z-10 text-center text-white px-6 max-w-5xl mx-auto">
+    <div class="relative z-10 text-center px-6 max-w-5xl mx-auto hero-content">
       <h1 
-        class="text-[32px] md:text-[48px] lg:text-[64px] font-serif font-medium leading-[1.15] tracking-tight mb-6"
-        style="color: #F5DEB3; text-shadow: 2px 2px 12px rgba(0,0,0,0.7);">
+        class="text-[36px] md:text-[48px] lg:text-[64px] font-serif font-medium leading-[1.15] tracking-tight mb-6"
+        style="color: #FFF8F0; text-shadow: 2px 4px 20px rgba(0,0,0,0.5);">
         "When You're a Regular Here,<br/>
         <span class="italic">We Put Your Name on the Mug."</span>
       </h1>
       
       <p 
-        class="text-[16px] md:text-[20px] text-white/90 font-sans max-w-2xl mx-auto leading-relaxed"
-        style="text-shadow: 1px 1px 6px rgba(0,0,0,0.5);">
+        class="text-[18px] md:text-[20px] font-light max-w-2xl mx-auto leading-relaxed mb-10"
+        style="color: rgba(255,248,240,0.9); text-shadow: 1px 2px 10px rgba(0,0,0,0.4);">
         A neighborhood cafe built by two friends, for the community they love.
       </p>
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href="https://order.toasttab.com/online/kimandjennyscafe-new-location-586-e-wheatland-rd" 
+          target="_blank"
+          rel="noreferrer"
+          class="btn-primary text-[16px] px-8 py-4 inline-flex items-center justify-center">
+          <i class="fas fa-shopping-bag mr-2"></i>
+          Order Online
+        </a>
+        <a 
+          routerLink="/menu" 
+          class="btn-outline text-[16px] px-8 py-4 inline-flex items-center justify-center border-2 border-white/80 text-white hover:bg-white hover:text-chocolate transition-all duration-300">
+          <i class="fas fa-utensils mr-2"></i>
+          See Our Menu
+        </a>
+      </div>
     </div>
 
-    <!-- Scroll Down Indicator -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
-      <span class="text-[12px] tracking-[0.2em] uppercase text-white/60">Scroll Down</span>
-      <div class="w-px h-10 bg-gradient-to-b from-white/60 to-transparent"></div>
+    <!-- Animated Scroll Indicator -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-3 scroll-indicator">
+      <span class="text-[11px] tracking-[0.25em] uppercase" style="color: rgba(255,248,240,0.7);">Scroll</span>
+      <div class="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center pt-2">
+        <svg class="w-3 h-3 animate-bounce" style="color: rgba(255,248,240,0.8);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </div>
     </div>
   </section>
 
-  <!-- SECTION 2: THE FOUNDING STORY - Two-column layout -->
-  <section class="section-padding bg-white">
+  <!-- SECTION 2: THE FOUNDING STORY - Editorial two-column -->
+  <section class="section-padding story-section" style="background-color: #FBF7F2;">
     <div class="max-w-container mx-auto px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        <!-- Left: Image -->
-        <div class="rounded-2xl overflow-hidden shadow-card">
-          <img 
-            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80" 
-            alt="Kim and Jenny in their cafe"
-            class="w-full h-[400px] lg:h-[500px] object-cover"
-          />
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <!-- Left: Image with warm styling -->
+        <div class="story-image-wrapper relative lg:pr-8">
+          <div class="rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(107,68,35,0.15)]">
+            <img 
+              src="https://images.unsplash.com/photo-1559305616-3f99cd43e353?w=900&q=85" 
+              alt="Warm cozy cafe interior"
+              class="w-full h-[450px] lg:h-[550px] object-cover hover:scale-105 transition-transform duration-700"
+            />
+          </div>
+          <!-- Decorative accent -->
+          <div class="absolute -bottom-4 -right-4 w-32 h-32 rounded-full opacity-10" style="background: radial-gradient(circle, #8B4513 0%, transparent 70%);"></div>
         </div>
 
         <!-- Right: Text -->
-        <div>
-          <p class="text-xs tracking-[0.3em] uppercase text-primary font-semibold mb-3">How It Started</p>
-          <h2 class="text-h2 mb-6">Two Friends. One Dream.</h2>
-          <div class="space-y-4 text-text-light leading-relaxed">
-            <p class="text-[16px] leading-[1.8]">
+        <div class="story-text">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-[3px]" style="background-color: #8B4513;"></div>
+            <p class="text-xs tracking-[0.3em] uppercase font-semibold" style="color: #8B4513;">How It Started</p>
+          </div>
+          <h2 class="font-serif text-[36px] md:text-[44px] lg:text-[52px] font-medium leading-[1.1] mb-8" style="color: #2C1810;">
+            Two Friends.<br/>One Dream.
+          </h2>
+          <div class="space-y-5 text-[16px] leading-[1.9]" style="color: #5C4033;">
+            <p>
               Kim and Jenny didn't set out to open a cafe. They set out to create a place that felt like home — for themselves and for everyone in Duncanville who needed one.
             </p>
-            <p class="text-[16px] leading-[1.8]">
+            <p>
               Armed with a vision, a whole lot of determination, and hands that weren't afraid to get dirty, they built something real. Something that belongs to this neighborhood.
+            </p>
+            <p>
+              Today, Kim & Jenny's is more than a cafe. It's where Duncanville comes to start the day, catch up with neighbors, and feel at home. And yes — if you come often enough, your name goes on a mug.
             </p>
           </div>
         </div>
@@ -65,171 +99,202 @@
     </div>
   </section>
 
-  <!-- SECTION 3: THEY BUILT IT - Dark background with stat cards -->
-  <section class="section-padding bg-chocolate text-white relative overflow-hidden">
+  <!-- SECTION 3: THEY BUILT IT - Premium stat cards -->
+  <section class="section-padding bg-chocolate text-white relative overflow-hidden built-section">
     <!-- Background Pattern -->
-    <div class="absolute inset-0 opacity-5">
+    <div class="absolute inset-0 opacity-[0.08]">
       <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
     </div>
 
     <div class="max-w-container mx-auto px-6 lg:px-8 relative z-10">
-      <div class="text-center mb-16">
-        <p class="text-xs tracking-[0.3em] uppercase text-white/60 font-semibold mb-3">Built With Love</p>
-        <h2 class="text-h2 text-white mb-4">They Didn't Just Open a Cafe. They Built It.</h2>
-        <p class="text-white/70 max-w-2xl mx-auto leading-relaxed">
+      <div class="text-center mb-16 built-header">
+        <p class="text-xs tracking-[0.3em] uppercase font-semibold mb-3" style="color: rgba(255,248,240,0.6);">Built With Love</p>
+        <h2 class="font-serif text-[36px] md:text-[44px] lg:text-[52px] font-medium leading-[1.1] mb-6 text-white">
+          They Didn't Just Open a Cafe.<br/>They Built It.
+        </h2>
+        <p class="text-lg max-w-2xl mx-auto leading-relaxed" style="color: rgba(255,248,240,0.75);">
           From tearing out flooring to rewiring lights, Kim and Jenny renovated this space with their own hands. Every corner of this cafe has their fingerprints on it — and that's exactly how they wanted it.
         </p>
       </div>
 
-      <!-- Stat Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-4xl mx-auto">
+      <!-- Premium Stat Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
         <!-- Card 1 -->
-        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-primary/20 flex items-center justify-center">
-            <i class="fas fa-hammer text-3xl text-secondary"></i>
+        <div class="built-card relative rounded-2xl py-10 px-8 text-center transition-all duration-300 hover:-translate-y-1" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);">
+          <div class="absolute top-0 left-0 right-0 h-[3px] rounded-t-2xl" style="background-color: #C8963E;"></div>
+          <div class="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center" style="background: rgba(200,150,62,0.2);">
+            <i class="fas fa-hammer text-[42px]" style="color: #C8963E;"></i>
           </div>
-          <h3 class="text-xl font-display font-medium text-white mb-2">Built From Scratch</h3>
-          <p class="text-white/70 text-sm">Renovated top to bottom, by hand</p>
+          <h3 class="text-2xl font-display font-medium text-white mb-3">Built From Scratch</h3>
+          <p class="text-sm" style="color: rgba(255,248,240,0.7);">Renovated top to bottom, by hand</p>
         </div>
 
         <!-- Card 2 -->
-        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-primary/20 flex items-center justify-center">
-            <i class="fas fa-heart text-3xl text-secondary"></i>
+        <div class="built-card relative rounded-2xl py-10 px-8 text-center transition-all duration-300 hover:-translate-y-1" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);">
+          <div class="absolute top-0 left-0 right-0 h-[3px] rounded-t-2xl" style="background-color: #C8963E;"></div>
+          <div class="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center" style="background: rgba(200,150,62,0.2);">
+            <i class="fas fa-heart text-[42px]" style="color: #C8963E;"></i>
           </div>
-          <h3 class="text-xl font-display font-medium text-white mb-2">Woman-Owned</h3>
-          <p class="text-white/70 text-sm">Founded and run by Kim & Jenny</p>
+          <h3 class="text-2xl font-display font-medium text-white mb-3">Woman-Owned</h3>
+          <p class="text-sm" style="color: rgba(255,248,240,0.7);">Founded and run by Kim & Jenny</p>
         </div>
 
         <!-- Card 3 -->
-        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center border border-white/20 hover:bg-white/15 transition-all duration-300">
-          <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-primary/20 flex items-center justify-center">
-            <i class="fas fa-map-marker-alt text-3xl text-secondary"></i>
+        <div class="built-card relative rounded-2xl py-10 px-8 text-center transition-all duration-300 hover:-translate-y-1" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);">
+          <div class="absolute top-0 left-0 right-0 h-[3px] rounded-t-2xl" style="background-color: #C8963E;"></div>
+          <div class="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center" style="background: rgba(200,150,62,0.2);">
+            <i class="fas fa-map-marker-alt text-[42px]" style="color: #C8963E;"></i>
           </div>
-          <h3 class="text-xl font-display font-medium text-white mb-2">Duncanville Proud</h3>
-          <p class="text-white/70 text-sm">Rooted in this community since day one</p>
+          <h3 class="text-2xl font-display font-medium text-white mb-3">Duncanville Proud</h3>
+          <p class="text-sm" style="color: rgba(255,248,240,0.7);">Rooted in this community since day one</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECTION 4: THE MUG TRADITION - Most important section -->
-  <section class="section-padding bg-cream relative overflow-hidden">
-    <!-- Decorative subtle pattern -->
-    <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at 1px 1px, #6B4423 1px, transparent 0); background-size: 40px 40px;"></div>
+  <!-- SECTION 4: THE MUG TRADITION - Cinematic centerpiece -->
+  <section class="section-padding mug-section relative overflow-hidden" style="background-color: #FBF7F2;">
+    <!-- Subtle warm texture overlay -->
+    <div class="absolute inset-0 opacity-[0.04]" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\'/%3E%3C/svg%3E');"></div>
     
     <div class="max-w-container mx-auto px-6 lg:px-8 relative z-10">
-      <div class="max-w-3xl mx-auto text-center">
-        <p class="text-xs tracking-[0.3em] uppercase text-primary font-semibold mb-3">The Heart of Our Cafe</p>
-        <h2 class="text-h2 mb-8">Your Name on the Mug</h2>
-        
-        <p class="text-[17px] md:text-[18px] text-text-light leading-[1.9] mb-12 max-w-2xl mx-auto">
+      <!-- Decorative element above heading -->
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <div class="w-2 h-2 rounded-full" style="background-color: #8B4513;"></div>
+        <div class="w-2 h-2 rounded-full" style="background-color: #C8963E;"></div>
+        <div class="w-2 h-2 rounded-full" style="background-color: #8B4513;"></div>
+      </div>
+      
+      <div class="text-center mb-12 mug-header">
+        <p class="text-xs tracking-[0.3em] uppercase font-semibold mb-4" style="color: #8B4513;">The Heart of Our Cafe</p>
+        <h2 class="font-serif text-[42px] md:text-[52px] lg:text-[64px] font-medium leading-[1.1]" style="color: #2C1810;">
+          Your Name on the Mug
+        </h2>
+      </div>
+
+      <!-- Parchment Card with Text -->
+      <div class="max-w-[680px] mx-auto rounded-[16px] p-8 md:p-12 mb-12 mug-text-card" style="background: linear-gradient(135deg, #FFF3E0 0%, #FFEDD5 100%); box-shadow: 0 10px 40px rgba(139,69,19,0.1);">
+        <p class="text-[17px] md:text-[19px] leading-[1.9] text-center" style="color: #5C4033;">
           Become a regular at Kim & Jenny's and something special happens — your name goes on a mug. Not a loyalty app. Not a punch card. A real mug, with your name on it, waiting for you every time you walk in. That's how we know you're home.
         </p>
+      </div>
 
-        <!-- Mug Image -->
-        <div class="relative inline-block">
-          <div class="rounded-2xl overflow-hidden shadow-2xl max-w-md mx-auto">
-            <img 
-              src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=600&q=80" 
-              alt="Coffee mugs with names"
-              class="w-full h-auto object-cover"
-            />
+      <!-- Large Warm Mug Image -->
+      <div class="relative max-w-[700px] mx-auto mug-image-wrapper">
+        <div class="rounded-[20px] overflow-hidden" style="box-shadow: 0 25px 80px rgba(107,68,35,0.25);">
+          <img 
+            src="https://images.unsplash.com/photo-1572119865084-43c285814d63?w=900&q=85" 
+            alt="Warm coffee mugs on wooden table"
+            class="w-full h-auto object-cover"
+          />
+        </div>
+        
+        <!-- Stats below image -->
+        <div class="flex items-center justify-center gap-6 md:gap-10 mt-8 flex-wrap mug-stats">
+          <div class="text-center">
+            <p class="text-sm tracking-wider uppercase font-semibold" style="color: #8B4513;">500+ Named Mugs</p>
           </div>
-          <!-- Decorative underline -->
-          <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+          <div class="w-px h-6" style="background-color: rgba(139,69,19,0.3);"></div>
+          <div class="text-center">
+            <p class="text-sm tracking-wider uppercase font-semibold" style="color: #8B4513;">Est. 2022</p>
+          </div>
+          <div class="w-px h-6 hidden md:block" style="background-color: rgba(139,69,19,0.3);"></div>
+          <div class="text-center">
+            <p class="text-sm tracking-wider uppercase font-semibold" style="color: #8B4513;">Duncanville, TX</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECTION 5: THE FOOD - Card grid -->
-  <section class="section-padding bg-white">
+  <!-- SECTION 5: THE FOOD - Premium card grid -->
+  <section class="section-padding food-section bg-white">
     <div class="max-w-container mx-auto px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <p class="text-xs tracking-[0.3em] uppercase text-primary font-semibold mb-3">From Our Kitchen</p>
-        <h2 class="text-h2 mb-4">Southern Comfort. Made Fresh. Every Day.</h2>
-        <p class="text-text-light max-w-xl mx-auto">From our famous Banana Pudding to handcrafted coffee — everything here is made with care.</p>
+      <div class="text-center mb-16 food-header">
+        <p class="text-xs tracking-[0.3em] uppercase font-semibold mb-3" style="color: #8B4513;">From Our Kitchen</p>
+        <h2 class="font-serif text-[36px] md:text-[44px] lg:text-[52px] font-medium leading-[1.1] mb-4" style="color: #2C1810;">
+          Southern Comfort.<br/>Made Fresh. Every Day.
+        </h2>
+        <p class="max-w-xl mx-auto text-lg" style="color: #5C4033;">From our famous Banana Pudding to handcrafted coffee — everything here is made with care.</p>
       </div>
 
-      <!-- Food Cards -->
+      <!-- Food Cards with better images -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Card 1: Banana Pudding -->
-        <div class="card overflow-hidden group">
-          <div class="relative h-56 overflow-hidden">
+        <div class="food-card card overflow-hidden group rounded-2xl" style="background: #FBF7F2;">
+          <div class="relative h-64 overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=80" 
-              alt="Banana Pudding"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800&q=85" 
+              alt="Creamy Banana Pudding dessert"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
-            <div class="absolute top-4 right-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full">
+            <div class="absolute top-4 right-4 px-4 py-1.5 rounded-full text-xs font-semibold text-white" style="background-color: #8B4513;">
               Most Loved
             </div>
           </div>
           <div class="p-6">
-            <h3 class="text-h4 mb-2">Banana Pudding</h3>
-            <p class="text-text-light text-sm leading-relaxed">
-              Our most-loved dessert. Creamy, rich, and made fresh daily.
-            </p>
+            <h3 class="font-serif text-2xl font-medium mb-2" style="color: #2C1810;">Banana Pudding</h3>
+            <p class="text-[15px] leading-relaxed" style="color: #5C4033;">Our most-loved dessert. Creamy, rich, and made fresh daily.</p>
           </div>
         </div>
 
         <!-- Card 2: Handcrafted Coffee -->
-        <div class="card overflow-hidden group">
-          <div class="relative h-56 overflow-hidden">
+        <div class="food-card card overflow-hidden group rounded-2xl" style="background: #FBF7F2;">
+          <div class="relative h-64 overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" 
-              alt="Handcrafted Coffee"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=85" 
+              alt="Latte art handcrafted coffee"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
           <div class="p-6">
-            <h3 class="text-h4 mb-2">Handcrafted Coffee</h3>
-            <p class="text-text-light text-sm leading-relaxed">
-              Every cup made to order. No rush, no shortcuts.
-            </p>
+            <h3 class="font-serif text-2xl font-medium mb-2" style="color: #2C1810;">Handcrafted Coffee</h3>
+            <p class="text-[15px] leading-relaxed" style="color: #5C4033;">Every cup made to order. No rush, no shortcuts.</p>
           </div>
         </div>
 
         <!-- Card 3: Homestyle Plates -->
-        <div class="card overflow-hidden group">
-          <div class="relative h-56 overflow-hidden">
+        <div class="food-card card overflow-hidden group rounded-2xl" style="background: #FBF7F2;">
+          <div class="relative h-64 overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" 
-              alt="Homestyle Plates"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=85" 
+              alt="Warm homestyle breakfast plate"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
           <div class="p-6">
-            <h3 class="text-h4 mb-2">Homestyle Plates</h3>
-            <p class="text-text-light text-sm leading-relaxed">
-              Breakfast and lunch that tastes like it came from someone's kitchen.
-            </p>
+            <h3 class="font-serif text-2xl font-medium mb-2" style="color: #2C1810;">Homestyle Plates</h3>
+            <p class="text-[15px] leading-relaxed" style="color: #5C4033;">Breakfast and lunch that tastes like it came from someone's kitchen.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECTION 6: CLOSING CTA - Dark background -->
-  <section class="py-20 lg:py-28 bg-chocolate relative overflow-hidden">
-    <!-- Background Image -->
+  <!-- SECTION 6: CLOSING CTA - Premium dark section -->
+  <section class="cta-section py-24 lg:py-32 bg-chocolate relative overflow-hidden">
+    <!-- Background with subtle grain -->
     <div class="absolute inset-0 z-0">
       <img 
         src="https://images.unsplash.com/photo-1517701604599-bb29b5dd7359?w=1920&q=80" 
-        alt="Coffee beans" 
-        class="w-full h-full object-cover opacity-15"
+        alt="Coffee beans background" 
+        class="w-full h-full object-cover opacity-10"
       />
+      <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(44,24,16,0.3) 0%, rgba(44,24,16,0.5) 100%);"></div>
     </div>
     
     <div class="max-w-container mx-auto px-6 lg:px-8 relative z-10 text-center">
-      <h2 class="text-[32px] md:text-[44px] lg:text-[52px] font-display font-medium text-white leading-tight mb-4" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.5);">
+      <h2 class="font-serif text-[40px] md:text-[52px] lg:text-[64px] font-medium leading-[1.1] mb-6 text-white cta-heading" style="text-shadow: 2px 4px 20px rgba(0,0,0,0.4);">
         Come Get Your Name<br/>
         <span style="color: #F5DEB3;">on a Mug.</span>
       </h2>
       
+      <div class="flex items-center justify-center gap-2 mb-4 text-white/80">
+        <i class="fas fa-map-marker-alt text-sm"></i>
+        <p class="text-lg">586 E. Wheatland Rd., Duncanville, TX</p>
+      </div>
       <p class="text-white/70 text-lg mb-10">
-        586 E. Wheatland Rd., Duncanville, TX · Mon–Sat 7am–3pm · Sun 10am–3pm
+        Mon–Sat 7am–3pm · Sun 10am–3pm
       </p>
       
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -237,13 +302,13 @@
           href="https://order.toasttab.com/online/kimandjennyscafe-new-location-586-e-wheatland-rd" 
           target="_blank"
           rel="noreferrer"
-          class="btn-primary text-[16px] px-8 py-4">
+          class="btn-primary text-[16px] px-10 py-4 inline-flex items-center justify-center transition-all duration-200 hover:scale-[1.02]">
           <i class="fas fa-shopping-bag mr-2"></i>
           Order Online
         </a>
         <a 
           routerLink="/menu" 
-          class="btn-outline text-[16px] px-8 py-4">
+          class="btn-outline text-[16px] px-10 py-4 inline-flex items-center justify-center border-2 border-white/80 text-white hover:bg-white hover:text-chocolate transition-all duration-200 hover:scale-[1.02]">
           <i class="fas fa-utensils mr-2"></i>
           See Our Menu
         </a>
@@ -252,3 +317,84 @@
   </section>
 
 </main>
+
+<!-- Scroll Animation Styles -->
+<style>
+  /* Base animation classes */
+  .hero-content,
+  .story-section,
+  .story-image-wrapper,
+  .story-text,
+  .built-section,
+  .built-header,
+  .built-card,
+  .mug-section,
+  .mug-header,
+  .mug-text-card,
+  .mug-image-wrapper,
+  .mug-stats,
+  .food-section,
+  .food-header,
+  .food-card,
+  .cta-section,
+  .cta-heading {
+    opacity: 1;
+  }
+
+  /* Hero entrance animation */
+  @keyframes heroFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-content {
+    animation: heroFadeIn 0.8s ease-out forwards;
+  }
+
+  /* Scroll indicator animation */
+  .scroll-indicator {
+    animation: heroFadeIn 0.8s ease-out 0.6s forwards;
+    opacity: 0;
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Section transitions */
+  .section-padding {
+    transition: opacity 0.3s ease;
+  }
+
+  /* Card hover effects */
+  .built-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  }
+
+  .food-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(107,68,35,0.15);
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-content,
+    .scroll-indicator {
+      animation: none;
+      opacity: 1;
+    }
+    
+    * {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+</style>

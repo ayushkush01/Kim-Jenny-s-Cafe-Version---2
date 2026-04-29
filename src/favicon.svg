@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Cream background -->
+  <rect width="32" height="32" fill="#FBF7F2"/>
+  <!-- Rounded corners -->
+  <rect width="32" height="32" rx="6" fill="#FBF7F2"/>
+  <!-- KJ text in warm brown serif -->
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="18" 
+        font-weight="600" 
+        fill="#3D1A0A">KJ</text>
+  <!-- Ampersand accent -->
+  <text x="50%" y="75%" dominant-baseline="middle" text-anchor="middle" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="8" 
+        font-style="italic"
+        fill="#8B4513">&amp;</text>
+</svg>
